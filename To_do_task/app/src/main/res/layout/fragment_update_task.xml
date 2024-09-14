@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background_color"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".UpdateTaskFragment">
+
+    <!-- Task Title Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/titleInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Title"
+        app:boxStrokeColor="@color/primary_color"
+        app:boxStrokeWidth="2dp"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/titleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="Existing Task Title" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Task Description Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/descriptionInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Description"
+        app:boxStrokeColor="@color/primary_color"
+        app:boxStrokeWidth="2dp"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/descriptionEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="Existing Task Description" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Task Date Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dateInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Due Date"
+        app:boxStrokeColor="@color/primary_color"
+        app:boxStrokeWidth="2dp"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dateEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:focusable="false"
+            android:clickable="true"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="Existing Task Date"
+            android:drawableEnd="@drawable/ic_calendar" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Task Priority Dropdown -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/priorityInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Priority"
+        app:boxStrokeColor="@color/primary_color"
+        app:boxStrokeWidth="2dp"
+        android:layout_marginBottom="24dp">
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Save Changes Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/saveTaskButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Changes"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/primary_color"
+        app:cornerRadius="8dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Delete Task Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/deleteTaskButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Task"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/design_default_color_error"
+        app:cornerRadius="8dp" />
+
+</LinearLayout>
